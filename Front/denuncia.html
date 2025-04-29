@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fazer Denúncia</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.png" alt="Logo" onclick="location.href='index.html'">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="denuncia.html" class="active">Fazer Denúncia</a></li>
+        <li><a href="relatos.html">Relatos</a></li>
+        <li><a href="info.html">Informações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fazer uma Denúncia</h1>
+    <form id="formDenuncia" enctype="multipart/form-data">
+      <label for="setor">Setor:</label>
+      <select name="setor" id="setor" required>
+        <option value="">Selecione</option>
+        <option value="Financeiro">Financeiro</option>
+        <option value="Recursos Humanos">Recursos Humanos</option>
+        <option value="Tecnologia">Tecnologia</option>
+        <option value="Fiscal">Fiscal</option>
+        <option value="Produção">Produção</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+
+      <label for="anexo">Anexo (opcional):</label>
+      <input type="file" id="anexo" name="anexo">
+
+      <button type="submit">Enviar Denúncia</button>
+    </form>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

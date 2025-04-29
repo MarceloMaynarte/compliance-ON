@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.png" alt="Logo" onclick="location.href='index.html'">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Administração de Denúncias</h1>
+    <div id="loginAdmin">
+      <input type="password" id="senha" placeholder="Digite a senha de admin">
+      <button onclick="validarAdmin()">Entrar</button>
+    </div>
+
+    <div id="painelAdmin" style="display:none;">
+      <h2>Denúncias Recebidas</h2>
+      <table id="tabelaDenuncias">
+        <thead>
+          <tr>
+            <th>Setor</th>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Anexo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
